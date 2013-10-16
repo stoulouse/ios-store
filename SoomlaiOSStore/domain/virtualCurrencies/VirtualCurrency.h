@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#import "VirtualItem.h"
+#import "domain/VirtualItem.h"
 
 /**
  * This is a representation of the game's virtual currency.

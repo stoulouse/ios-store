@@ -113,8 +113,6 @@
 		C02413E4176F2512007BB351 /* PurchaseWithVirtualItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0241374176F2512007BB351 /* PurchaseWithVirtualItem.m */; };
 		C02413E5176F2512007BB351 /* SoomlaiOSStore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C0241375176F2512007BB351 /* SoomlaiOSStore-Prefix.pch */; };
 		C02413E6176F2512007BB351 /* StoreConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C0241376176F2512007BB351 /* StoreConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C02413E7176F2512007BB351 /* StoreConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C0241377176F2512007BB351 /* StoreConfig.m */; };
-		C02413E8176F2512007BB351 /* StoreConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C0241377176F2512007BB351 /* StoreConfig.m */; };
 		C02413E9176F2512007BB351 /* StoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0241378176F2512007BB351 /* StoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C02413EA176F2512007BB351 /* StoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0241379176F2512007BB351 /* StoreController.m */; };
 		C02413EB176F2512007BB351 /* StoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0241379176F2512007BB351 /* StoreController.m */; };
@@ -224,7 +222,6 @@
 		C0241374176F2512007BB351 /* PurchaseWithVirtualItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseWithVirtualItem.m; sourceTree = "<group>"; };
 		C0241375176F2512007BB351 /* SoomlaiOSStore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SoomlaiOSStore-Prefix.pch"; sourceTree = "<group>"; };
 		C0241376176F2512007BB351 /* StoreConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreConfig.h; sourceTree = "<group>"; };
-		C0241377176F2512007BB351 /* StoreConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreConfig.m; sourceTree = "<group>"; };
 		C0241378176F2512007BB351 /* StoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreController.h; sourceTree = "<group>"; };
 		C0241379176F2512007BB351 /* StoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreController.m; sourceTree = "<group>"; };
 		C024137A176F2512007BB351 /* StoreInventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInventory.h; sourceTree = "<group>"; };
@@ -292,7 +289,6 @@
 				C054F21217FAB22A006F5B8E /* SoomlaVerification.m */,
 				C0241375176F2512007BB351 /* SoomlaiOSStore-Prefix.pch */,
 				C0241376176F2512007BB351 /* StoreConfig.h */,
-				C0241377176F2512007BB351 /* StoreConfig.m */,
 				C0241378176F2512007BB351 /* StoreController.h */,
 				C0241379176F2512007BB351 /* StoreController.m */,
 				C024137A176F2512007BB351 /* StoreInventory.h */,
@@ -666,7 +662,6 @@
 				C02413DD176F2512007BB351 /* PurchaseType.m in Sources */,
 				C02413E0176F2512007BB351 /* PurchaseWithMarket.m in Sources */,
 				C02413E3176F2512007BB351 /* PurchaseWithVirtualItem.m in Sources */,
-				C02413E7176F2512007BB351 /* StoreConfig.m in Sources */,
 				C02413EA176F2512007BB351 /* StoreController.m in Sources */,
 				C02413ED176F2512007BB351 /* StoreInventory.m in Sources */,
 				C02413F0176F2512007BB351 /* StoreUtils.m in Sources */,
@@ -713,7 +708,6 @@
 				C02413DE176F2512007BB351 /* PurchaseType.m in Sources */,
 				C02413E1176F2512007BB351 /* PurchaseWithMarket.m in Sources */,
 				C02413E4176F2512007BB351 /* PurchaseWithVirtualItem.m in Sources */,
-				C02413E8176F2512007BB351 /* StoreConfig.m in Sources */,
 				C02413EB176F2512007BB351 /* StoreController.m in Sources */,
 				C02413EE176F2512007BB351 /* StoreInventory.m in Sources */,
 				C02413F1176F2512007BB351 /* StoreUtils.m in Sources */,
@@ -766,6 +760,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = SoomlaiOSStore;
 			};
 			name = Debug;
 		};
@@ -785,6 +780,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = SoomlaiOSStore;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
