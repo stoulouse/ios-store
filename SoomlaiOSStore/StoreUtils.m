@@ -33,11 +33,7 @@ static NSString* TAG = @"SOOMLA StoreUtils";
 }
 
 + (NSString*)deviceId {
-    if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
-        return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    } else {
-        return [SOOM_OpenUDID value];
-    }
+	return [SOOM_OpenUDID value];
 }
 
 + (NSDictionary*)jsonStringToDict:(NSString*)str {
