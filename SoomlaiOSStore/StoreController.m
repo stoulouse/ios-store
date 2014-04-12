@@ -256,7 +256,7 @@ static NSString* TAG = @"SOOMLA StoreController";
 - (void) failedTransaction: (SKPaymentTransaction *)transaction
 {
     if (transaction.error.code != SKErrorPaymentCancelled) {
-        LogError(TAG, ([NSString stringWithFormat:@"An error occured for product id \"%@\" with code \"%d\" and description \"%@\"", transaction.payment.productIdentifier, transaction.error.code, transaction.error.localizedDescription]));
+        LogError(TAG, ([NSString stringWithFormat:@"An error occured for product id \"%@\" with code \"%ld\" and description \"%@\"", transaction.payment.productIdentifier, transaction.error.code, transaction.error.localizedDescription]));
         
         [EventHandling postUnexpectedError:ERR_PURCHASE_FAIL forObject:self];
     }

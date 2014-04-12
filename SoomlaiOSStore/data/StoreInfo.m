@@ -138,9 +138,9 @@ static NSString* TAG = @"SOOMLA StoreInfo";
     }
     
     // we prefer initialization from the database (storeAssets are only set on the first time the game is loaded)!
-    if (![self initializeFromDB]){
+//    if (![self initializeFromDB]){
         [self privInitializeWithIStoreAssets:storeAssets];
-    }
+//    }
 }
 
 - (BOOL)initializeFromDB{
